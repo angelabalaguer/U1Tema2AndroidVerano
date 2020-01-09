@@ -8,6 +8,9 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
+
+import java.net.URLEncoder;
 
 public class Intenciones extends AppCompatActivity {
     @Override
@@ -25,16 +28,6 @@ public class Intenciones extends AppCompatActivity {
     public void Llamar(View view) {
         Intent intent = new Intent(Intent.ACTION_CALL,
                 Uri.parse("tel:952000243"));
-        if (checkSelfPermission(Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    Activity#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for Activity#requestPermissions for more details.
-            return;
-        }
         startActivity(intent);
     }
     public void maps(View view) {
@@ -53,5 +46,25 @@ public class Intenciones extends AppCompatActivity {
         intent.putExtra(Intent.EXTRA_TEXT, "Buen día Ing. Wilson tengo la siguiente duda...");
         intent.putExtra(Intent.EXTRA_EMAIL, new String[] {"nosliwsys@gmail.com"});
         startActivity(intent);
+    }
+
+    public void whatsapp(View view) {
+        PackageManager packageManager = this.getPackageManager();
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        try {
+            String url = "https://api.whatsapp.com/send?phone=" + "+51952000243" + "&text="
+                    + URLEncoder.encode("Buen día, tenia una duda del curso ... ", "UTF-8");
+            i.setPackage("com.whatsapp");
+            i.setData(Uri.parse(url));
+            if (i.resolveActivity(packageManager) != null) {
+                this.startActivity(i);
+            }
+            else {
+                Toast.makeText(this, "No tiene Whatsapp porfavor instale la app"
+                        , Toast.LENGTH_LONG).show();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
