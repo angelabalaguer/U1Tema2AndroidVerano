@@ -1,10 +1,11 @@
-package com.acrispin.u1tema2;
+package com.acrispin.u1tema2.FragmentTabHost;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentTabHost;
 
 import android.os.Bundle;
+
+import com.acrispin.u1tema2.R;
 
 public class MiFragmentTabhost extends FragmentActivity {
     private FragmentTabHost tabHost;

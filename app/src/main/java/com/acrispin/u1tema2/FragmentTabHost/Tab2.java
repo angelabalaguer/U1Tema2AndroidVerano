@@ -1,4 +1,4 @@
-package com.acrispin.u1tema2;
+package com.acrispin.u1tema2.FragmentTabHost;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
+
+import com.acrispin.u1tema2.R;
 
 public class Tab2 extends Fragment {
     @Override

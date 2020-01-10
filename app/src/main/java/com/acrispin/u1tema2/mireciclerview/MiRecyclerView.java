@@ -1,4 +1,4 @@
-package com.acrispin.u1tema2;
+package com.acrispin.u1tema2.mireciclerview;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -6,6 +6,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.widget.Toast;
+
+import com.acrispin.u1tema2.R;
 
 import java.util.Vector;
 

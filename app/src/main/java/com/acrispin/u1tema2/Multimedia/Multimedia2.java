@@ -1,10 +1,12 @@
-package com.acrispin.u1tema2;
+package com.acrispin.u1tema2.Multimedia;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.MediaController;
 import android.widget.VideoView;
+
+import com.acrispin.u1tema2.R;
 
 public class Multimedia2  extends AppCompatActivity {
     private MediaController mediaController;

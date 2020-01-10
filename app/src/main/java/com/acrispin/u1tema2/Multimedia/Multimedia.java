@@ -1,4 +1,4 @@
-package com.acrispin.u1tema2;
+package com.acrispin.u1tema2.Multimedia;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
+
+import com.acrispin.u1tema2.R;
 
 public class Multimedia  extends AppCompatActivity {
     MediaPlayer mp;

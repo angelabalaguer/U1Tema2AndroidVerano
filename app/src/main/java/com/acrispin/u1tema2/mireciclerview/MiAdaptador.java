@@ -1,4 +1,4 @@
-package com.acrispin.u1tema2;
+package com.acrispin.u1tema2.mireciclerview;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,6 +9,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.acrispin.u1tema2.R;
 
 import java.util.Vector;
 
