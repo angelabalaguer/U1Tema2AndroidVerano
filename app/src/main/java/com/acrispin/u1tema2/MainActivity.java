@@ -45,6 +45,10 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(this, Permisos.class));
             return true;
         }
+        if (id == R.id.activity_mirecyclerview) {
+            startActivity(new Intent(this, MiRecyclerView.class));
+            return true;
+        }
         return super.onOptionsItemSelected(item);
     }
 
