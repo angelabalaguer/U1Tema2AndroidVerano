@@ -23,6 +23,10 @@
         android:id="@+id/activity_mirecyclerview"
         android:orderInCategory="2"
         />
+    <item android:title="FragmentTabhost"
+        android:id="@+id/activity_fragmenttabhost"
+        android:orderInCategory="2"
+        />
     <item android:title="Salir"
         android:id="@+id/accion_salir"
         android:orderInCategory="2"

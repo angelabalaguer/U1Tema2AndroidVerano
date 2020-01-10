@@ -49,6 +49,10 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(this, MiRecyclerView.class));
             return true;
         }
+        if (id == R.id.activity_fragmenttabhost) {
+            startActivity(new Intent(this, MiFragmentTabhost.class));
+            return true;
+        }
         return super.onOptionsItemSelected(item);
     }
 
